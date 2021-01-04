@@ -1,0 +1,14 @@
+import React from 'react';
+
+import { {{ pascalCase name }}Component } from '@components/{{ lowerCase name }}';
+
+import { N{{ pascalCase name }} } from '@namespace/{{ lowerCase name }}';
+
+// import { secureConsole } from '@secure-console/index'
+
+export const {{ pascalCase name }}Container: React.FC<N{{ pascalCase name }}.IContainerProps> = ({ {{ containerProps }} }) => {
+    // PUT YOU CODE HERE
+    const {{ componentProps }} = {{ containerProps }}
+
+    return < {{ pascalCase name }}Component {...{ {{ componentProps }} }} />;
+}

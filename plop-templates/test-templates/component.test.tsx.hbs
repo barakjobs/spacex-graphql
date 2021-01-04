@@ -1,0 +1,21 @@
+import React from 'react';
+import { render } from '@testing-library/react';
+import '@testing-library/jest-dom/extend-expect'
+
+import { {{ pascalCase name }}Component } from './index';
+
+describe('checked render component {{ pascalCase name }}', () => {
+    it('should render good {{ pascalCase name }}Component', () => {
+        const { getByText } = render(< {{ pascalCase name }}Component />);
+        const element = getByText(/component/i);
+
+        expect(element).toBeInTheDocument();
+    })
+    
+    it('should math snapshot {{ pascalCase name }}Component', () => {
+        const { getByText } = render(< {{ pascalCase name }}Component />);
+        const element = getByText(/component/i);
+
+        expect(element).toMatchSnapshot();
+    })
+});

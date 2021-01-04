@@ -1,0 +1,11 @@
+log/
+node_modules/
+plop-templates/
+/dist
+
+package-lock.json
+yarn.lock
+
+.idea
+.DS_Store
+.sass-cache
